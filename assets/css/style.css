@@ -1,0 +1,30 @@
+html,
+    body,
+    header,
+    .intro-3 {
+      height: 100%;
+    }
+    @media (max-width: 450px) {
+      html,
+      body,
+      header,
+      .intro-3 {
+        height: 820px;
+      }
+    }
+    @media (min-width: 451px) and (max-width: 740px) {
+      html,
+      body,
+      header,
+      .intro-3 {
+        height: 900px;
+      }
+    }
+    @media (min-width: 800px) and (max-width: 850px) {
+      html,
+      body,
+      header,
+      .intro-3 {
+        height: 950px;
+      }
+    }
