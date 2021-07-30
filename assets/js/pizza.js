@@ -255,6 +255,25 @@ $( () => {
                                     break;
                             }
                             break;
+                        }
+                        break;
+                }
+                switch (topping) {
+                    case topping = "tomato":
+                        totalPrice = totalPrice + 80;
+                        break;
+                    case topping = "onions":
+                        totalPrice = totalPrice + 80;
+                        break;
+                    case topping = "mushroom":
+                        totalPrice = totalPrice + 80;
+                        break;
+                    case topping = "greenpepper":
+                        totalPrice = totalPrice + 80;
+                        break;
+                    case topping = "olives":
+                        totalPrice = totalPrice + 120;
+                        break;
                         
 
                     
