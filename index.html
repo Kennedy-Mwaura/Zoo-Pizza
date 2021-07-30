@@ -32,7 +32,7 @@
                 <a class="nav-link" href="#food-menu">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#orders">Orders</a>
+                <a class="nav-link" href="#order">Orders</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contacts">Contact Us </a>
@@ -274,51 +274,51 @@
   
       </div>
       <!-- Third container -->
-      <div class="orders" id="order">
-        <h1 class="text-center" id="order-pizza">Order Pizza</h1>
-        <div class="form-group row">
+      <div class="orders" id="order" >
+        <h1 class="text-center" id="order-pizza">Pizza Order</h1>
+        <div class="form-group row" >
             <div class="col-sm-2"></div>
-            <div class="col-sm-8 order-overlay text-center">
-                <form class="col-sm-6 offset-sm-3 text-center">
+            <div class="col-sm-8 order-overlay text-center" >
+                <form class="col-sm-6 offset-sm-3 text-center" >
                     <label>Pick your pizza Flavour:</label>
                     <select class="custom-select custom-select-md mb-3 flavour" required>
-                        <option value="vegtikka">Veg Tikka</option>
                         <option value="chickentikka">Chicken Tikka</option>
-                        <option value="periperi">Peri-Peri Chicken</option>
-                        <option value="bbq">BBQ Steak</option>
+                        <option value="mushroom">Chicken and Mushroom</option>
+                        <option value="vegtikka">Veg Tikka</option>
                         <option value="boerewors">Boerewors</option>
                         <option value="hawaiian">Hawaiian</option>
-                        <option value="mushroom">Chicken and Mushroom</option>
                         <option value="regina">Regina Pizza</option>
+                        <option value="periperi">Peri-Peri Chicken</option>
+                        <option value="bbq">BBQ Steak</option>
                     </select>
                     <label>Chose your preferred Size:</label>
                     <select class="custom-select custom-select-md mb-3" id="size" required>
-                        <option value="regular">Regular</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
+                        <option value="regular">Regular @ Ksh. 400 </option>
+                        <option value="medium">Medium @ Ksh. 700</option>
+                        <option value="large">Large @ Ksh. 1100 </option>
                     </select>
-                    <label for="crust">Choose your favorite Crust:</label>
+                    <label for="crust">Choose your preferred Crust:</label>
                     <select class="custom-select custom-select-md mb-3" id="crust" required>
+                        <option value="flatbread">FlatBread Crust @ Ksh. 180</option>
+                        <option value="custom">Custom Crust @ Ksh. 280</option>
                         <option value="thin">Thin Crust @ Ksh. 100</option>
                         <option value="thick">Thick Crust @ Ksh. 150</option>
-                        <option value="flatbread">FlatBread Crust @ sh. 180</option>
-                        <option value="custom">Custom Crust @ sh. 280</option>
                     </select>
                     <label>Select Your favourite Toppings</label>
                     <select class="custom-select custom-select-md mb-3" id="toppings" required>
-                        <option value="tomato">Tomato @ sh. 80</option>
-                        <option value="onions">Onions @ sh. 80</option>
-                        <option value="mushroom">Mushroom @ sh. 80</option>
-                        <option value="greenpepper">Green Pepper @ sh. 80</option>
+                        <option value="mushroom">Mushroom @ Ksh. 80</option>
+                        <option value="greenpepper">Green Pepper @ Ksh. 80</option>
+                        <option value="tomato">Tomato @ Ksh. 80</option>
+                        <option value="onions">Onions @ Ksh. 80</option>
                         <option value=""></option>
-                        <option value="olives">Olives @ sh. 120</option>
-                        <option value="pineapple">Pineapple @ sh. 120</option>
-                        <option value="sweetcorn">Sweet Corn @ sh. 120</option>
-                        <option value="macon">Macon @ sh. 120</option>
-                        <option value="mince">Mince @ sh. 120</option>
+                        <option value="olives">Olives @ Ksh. 120</option>
+                        <option value="macon">Macon @ Ksh. 120</option>
+                        <option value="mince">Mince @ Ksh. 120</option>
+                        <option value="pineapple">Pineapple @ Ksh. 120</option>
+                        <option value="sweetcorn">Sweet Corn @ Ksh. 120</option>
                         <option value=""></option>
-                        <option value="beef">Beef Peperoni @ sh. 170</option>
-                        <option value="chicken">Periperi Chicken @ sh. 170</option>
+                        <option value="beef">Beef Peperoni @ Ksh. 170</option>
+                        <option value="chicken">Periperi Chicken @ Ksh. 170</option>
                     </select>
                     <label for="number">Number of Pizza's</label>
                     <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
@@ -333,6 +333,31 @@
     
             </div>
             <div class="col-sm-2"></div>
+        </div>
+    </div>
+    <div class="order-summary" id="sum-order">
+        <h1 class="text-center" id="summary">Order Summary</h1>
+        <h2 class="text-center summary">Hello there, your order is as follows:</h2>
+        <ol id="list" class="text-center sum">
+        </ol>
+    
+    
+        <div class="cdata-overlay">
+            <div class="customerdata row">
+                <div class="col-sm-3"></div>
+                <form action="" class="form-group col-sm-6 data">
+                    <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+                    <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
+                    <input type="text" class="form-control cdata" placeholder="Enter the location: ">
+                    <button class="btn btn-rounded btn-info text-center d-block mx-auto go">Get Pizza Delivered</button>
+                </form>
+    
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+        <div class="d-block mx-auto text-center">
+            <button class='deliver btn btn-rounded warm-flame-gradient indigo-text'>Make Delivery</button>
+            <button class='delivernot btn btn-rounded sunny-morning-gradient purple-text'>Self Pick Up</button>
         </div>
     </div>
       
@@ -354,8 +379,8 @@
 
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="assets/js/mdb.min.js"></script>
-    <!-- Akan name generator -->
-    <script type="text/javascript" src="assets/js/akan-name.js"></script>
+    <!-- Pizza Generator -->
+    <script type="text/javascript" src="assets/js/pizza.js"></script>
 
     <script>
     //Animation init
