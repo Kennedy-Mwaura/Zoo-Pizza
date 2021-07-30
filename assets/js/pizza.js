@@ -14,3 +14,88 @@ $( () => {
         let order = (f, s, c, t, n, total) => {
             return {f, s, c, t, n, total};
         };
+        //check price
+        let price, totalPrice;
+        switch (flavour) {
+            case flavour = "vegtikka":
+                switch (size) {
+                    case size = "regular":
+                        price = 400;
+                        if (crust === "thin") {
+                            totalPrice = (price * number) + 100;
+                        } else if (crust === "thick") {
+                            totalPrice = (price * number) + 150;
+                        } else if (crust === "flatbread") {
+                            totalPrice = (price * number) + 180;
+                        } else {
+                            totalPrice = (price * number) + 280;
+                        }
+                        break;
+                    case size = "medium":
+                        price = 700;
+                        if (crust === "thin") {
+                            totalPrice = (price * number) + 100;
+                        } else if (crust === "thick") {
+                            totalPrice = (price * number) + 150;
+                        } else if (crust === "flatbread") {
+                            totalPrice = (price * number) + 180;
+                        } else {
+                            totalPrice = (price * number) + 280;
+                        }
+                        break;
+                        case size = "large":
+                            price = 1100;
+                            if (crust === "thin") {
+                                totalPrice = (price * number) + 100;
+                            } else if (crust === "thick") {
+                                totalPrice = (price * number) + 150;
+                            } else if (crust === "flatbread") {
+                                totalPrice = (price * number) + 180;
+                            } else {
+                                totalPrice = (price * number) + 280;
+                            }
+                            break;
+                    }
+                    break;
+                case flavour = "chickentikka":
+                    switch (size) {
+                        case size = "regular":
+                            price = 400;
+                            if (crust === "thin") {
+                                totalPrice = (price * number) + 100;
+                            } else if (crust === "thick") {
+                                totalPrice = (price * number) + 150;
+                            } else if (crust === "flatbread") {
+                                totalPrice = (price * number) + 180;
+                            } else {
+                                totalPrice = (price * number) + 280;
+                            }
+                            break;
+                        case size = "medium":
+                            price = 700;
+                            if (crust === "thin") {
+                                totalPrice = (price * number) + 100;
+                            } else if (crust === "thick") {
+                                totalPrice = (price * number) + 150;
+                            } else if (crust === "flatbread") {
+                                totalPrice = (price * number) + 180;
+                            } else {
+                                totalPrice = (price * number) + 280;
+                            }
+                            break;
+                        case size = "large":
+                            price = 1100;
+                            if (crust === "thin") {
+                                totalPrice = (price * number) + 100;
+                            } else if (crust === "thick") {
+                                totalPrice = (price * number) + 150;
+                            } else if (crust === "flatbread") {
+                                totalPrice = (price * number) + 180;
+                            } else {
+                                totalPrice = (price * number) + 280;
+                            }
+                            break;
+                    }
+                    break;
+
+                
