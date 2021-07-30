@@ -268,12 +268,43 @@ $( () => {
                     case topping = "mushroom":
                         totalPrice = totalPrice + 80;
                         break;
+                    case topping = "pineapple":
+                        totalPrice = totalPrice + 120;
+                        break;
+                    case topping = "sweetcorn":
+                        totalPrice = totalPrice + 120;
+                        break;
+                    case topping = "macon":
+                        totalPrice = totalPrice + 120;
+                        break;
+                    case topping = "mince":
+                        totalPrice = totalPrice + 120;
+                        break;
+                    case topping = "beef":
+                        totalPrice = totalPrice + 170;
+                        break;
+                    case topping = "chicken":
+                        totalPrice = totalPrice + 170;
+                        break;
                     case topping = "greenpepper":
                         totalPrice = totalPrice + 80;
                         break;
                     case topping = "olives":
                         totalPrice = totalPrice + 120;
                         break;
+                }
+
+
+                //Execute order function
+                let newOrder = order(flavour, size, crust, topping, number, totalPrice);
+                console.log(newOrder); 
+
+                //Update the order section 
+                $('.summary').slideDown(2000);
+                $('.delivery-data-overlay').slideUp();
+                $('#list').slideDown();
+                $('.deliver').show(1000);
+                $('.delivernot').show(1000);
                         
 
                     
