@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 html,
     body,
     header,
@@ -28,12 +32,23 @@ html,
         height: 950px;
       }
     }
+    #pizza {
+        font-family: 'Bangers', cursive;
+        color: limegreen;
+        font-size: 35px;
+        padding-right: 32px;
+
+    }
+    #spantext {
+        padding-left: 10px;
+        font-family: 'Bungee Shade', cursive;
+    }
     .vector {
         padding-left: 65%;
     }
     .order-summary h1, .summary, .contact {
         color: #000;
-        font-family: 'Love Ya Like A Sister', cursive;
+        font-family: 'Cinzel', cursive;
         margin-top: 30px;
     }
     .deliver, .delivernot {
@@ -41,7 +56,7 @@ html,
     }
     #order-pizza {
         padding: 20px 50px 20px 50px;
-        font-family: 'Love Ya Like A Sister', cursive;
+        font-family: 'Righteous', cursive;
     }
     
     .order-overlay {
@@ -62,6 +77,9 @@ html,
     
     .pizz {
         color: lawngreen;
+    }
+    label {
+        color: whitesmoke;
     }
     
 
