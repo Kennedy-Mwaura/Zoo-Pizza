@@ -416,59 +416,67 @@
   
             <!-- Grid column -->
             <div class="col-md-8 col-lg-9">
-              <form>
-                <!-- Grid row -->
-                <div class="row">
-                  <!-- Grid column -->
-                  <div class="col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="uname" class="form-control" required>
-                      <label for="form41" class="">Your name</label>
+                <form>
+                    <!-- Grid row -->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                            <input type="text" id="uname" class="form-control" required>
+                            <label for="uname" class="">Your name</label>
+                            </div>
+                        </div>
+        
+                        <!-- Grid column -->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="uemail" class="form-control" required>
+                                <label for="uemail" class="">Your email</label>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-  
-                  <!-- Grid column -->
-                  <div class="col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="uemail" class="form-control" required>
-                      <label for="form52" class="">Your email</label>
+                    <!-- Grid row -->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-12">
+        
+                            <div class="md-form mb-0">
+                            <textarea type="text" id="umessage" class="md-textarea form-control" rows="2" required></textarea>
+                            <label for="umessage">Your message</label>
+                            </div>
+        
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <!-- Grid row -->
-  
-                <!-- Grid row -->
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="md-form mb-0">
-                      <input type="text" id="umessage" class="form-control" required>
-                      <label for="form51" class="">Subject</label>
+                    <!-- Grid row -->
+                    <div class="text-center text-md-left mb-5 mt-4">
+                        <button class="btn btn-rounded btn-white font-weight-bold " id="contactSubmit" type="submit" >Send</button>
                     </div>
-                  </div>
-                </div>
-                <!-- Grid row -->
-  
-                <!-- Grid row -->
-                <div class="row">
-                  <!-- Grid column -->
-                  <div class="col-md-12">
-  
-                    <div class="md-form mb-0">
-                      <textarea type="text" id="form76" class="md-textarea form-control" rows="3"></textarea>
-                      <label for="form76">Your message</label>
-                    </div>
-  
-                  </div>
-                </div>
-                <!-- Grid row -->
-              </form>
-  
-              <div class="text-center text-md-left mb-5 mt-4">
-                <a class="btn btn-rounded btn-white font-weight-bold">Send</a>
-              </div>
+                </form>
             </div>
             <!-- Grid column -->
-  
+            
+            <!-- Modal Contact confirmation -->
+            <div class="modal fade" id="contactModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+            
+                <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                <div class="modal-dialog modal-dialog-centered" role="document">
+            
+            
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalTitle">Thank You for Contacting us</h5>
+                    <button type="button btn-rounded" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body cmessage">
+
+                    </div>
+                </div>
+                </div>
+            </div>
+            
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3">
               <ul class="list-unstyled contact-icons float-md-right">

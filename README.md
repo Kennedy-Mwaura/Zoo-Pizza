@@ -28,7 +28,8 @@ This is a  web application to fulfill the following:
 
 ## Known Bugs
 
-* Attach a backend to the form.
+* Attach a backend to the pizza form.
+* Link the contact form to a 3rd party service e.g Mailchimp.
   
 ## Link to live site
 

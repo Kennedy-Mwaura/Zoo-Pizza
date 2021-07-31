@@ -360,6 +360,23 @@ $( () => {
 
                 });
 
+
+            });
+            $("#contactSubmit").click(() =>{
+                let name = $("input#uname").val();
+                let email = $("input#uemail").val();
+                let message = $("input#umessage").val();
+                console.log(name, email, message)
+                if ($("input#uname").val() && $("input#uemail").val() && $("input#umessage").val()!=""){
+                    $(".cmessage").append("Hey " + name + " we'll reply to you via " + email + " soon!");
+                    $("#contactModalCenter").modal('show');
+                }else {
+                    alert('Kindly fill in all the contact fields!')
+                }
+            });
+            $("#contactModalCenter").on("hidden.bs.modal", () => {
+                location.reload();
+
             });
 
             
