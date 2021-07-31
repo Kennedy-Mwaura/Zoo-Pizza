@@ -339,16 +339,16 @@
                 <div class="col-sm-3"></div>
                 <form action="" class="form-group col-sm-6 data">
                     <input type="text" class="form-control cdata" placeholder="Enter your Name:" id="name" required>
-                    <input type="number" class="form-control cdata" placeholder="Enter your phone number: " id="number" required>
+                    <input type="number" class="form-control cdata" placeholder="Enter your phone number: " id="phone" required>
                     <input type="text" class="form-control cdata" placeholder="Enter your approximate location:" id="location" required >
-                    <button class="btn btn-rounded btn-info text-center d-block mx-auto go" type="submit"> Get Pizza Delivered!</button>
+                    <button class="btn btn-rounded btn-info text-center d-block mx-auto go" id="delivery-button" type="submit"> Get Pizza Delivered!</button>
                 </form>
                 <div class="col-sm-3"></div>
             </div>
         </div>
         <div class="d-block mx-auto text-center">
-            <button class='deliver btn btn-rounded warm-flame-gradient indigo-text'> <i class="fas fa-truck"></i> Make Delivery</button>
-            <button class='delivernot btn btn-rounded sunny-morning-gradient purple-text'> <i class="fas fa-shopping-bag"></i> Self Pick Up</button>
+            <button class='deliver btn btn-rounded warm-flame-gradient indigo-text z-depth-1'> <i class="fas fa-truck"></i> Make Delivery</button>
+            <button class='delivernot btn btn-rounded sunny-morning-gradient purple-text z-depth-1'> <i class="fas fa-shopping-bag"></i> Self Pick Up</button>
         </div>
          <!--Modal: delivery Modal Confirm-->
          <div class="modal fade" id="deliveryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -365,8 +365,8 @@
 
                         <i class="fa fa-user fa-4x animated rotateIn"></i>
                         <br/>
-                        <div>
-                            <p class="green white-text" id="userName"></p>     
+                        <div id="delivery-message">
+                            <p class="green white-text"> </p>     
                         </div>
 
                     </div>

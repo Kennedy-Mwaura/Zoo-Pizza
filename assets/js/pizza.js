@@ -313,37 +313,49 @@ $( () => {
                     + newOrder.t + "<br>" + " Number of pizzas :    "
                     + newOrder.n + "<br>" + "Total Price :  "
                     + newOrder.total + "<br><br>").css('font-family', 'Cinzel').css('font-size', '21px');
+                
+                //Pick Up logic
+                $(".delivernot").click(() => {
+
+                });
+
+                //Delivery logic
+                $(".deliver").click(() => {
+                    $('.summary').slideUp();
+                    $('#list').slideUp();
+                    $('.summary').text("Provide your location details").slideDown();
+                    $('.deliver').hide(1000);
+                    $('.delivernot').hide(1000);
+                    $('.delivery-data-overlay').slideDown();
+                    
+    
+                });
+                
+                $("#delivery-button").click(() => {
+                
+                    let person = $("input#name").val();
+                    let phone = $("input#phone").val();
+                    let location = $("input#location").val();
+
+                    if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
+    
+                        $("#delivery-message").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+ newOrder.total);
+                        $("#deliveryModal").modal('show');
+                        // $("#totalbill").hide();
+                        // $("#finallmessage").slideDown(1200);
+                        console.log(phone, person, location)
+                    }else {
+                        alert("Please fill in the details for delivery!");
+                        $(".delivery").show();
+                        $("button#final-order").show();
+                    }
+
+                });
+
             });
 
-            //Pick Up logic
-            $(".delivernot").click(() => {
-
-            });
-
-            //Delivery logic
-            $(".deliver").click(() => {
-                $('.summary').slideUp();
-                $('#list').slideUp();
-                $('.summary').text("Provide your location details").slideDown();
-                $('.deliver').hide(1000);
-                $('.delivernot').hide(1000);
-                $('.delivery-data-overlay').slideDown();
-                let person = $("input#name").val();
-                let phone = $("input#phone").val();
-                let location = $("input#location").val();
- 
-            });
-            if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
-  
-                $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+newOrder.total);
-                $("#totalbill").hide();
-                $("#finallmessage").slideDown(1200);
-              }
-              else {
-                alert("Please fill in the details for delivery!");
-                $(".delivery").show();
-                $("button#final-order").show();
-              }
+            
+            
 });
                         
 
