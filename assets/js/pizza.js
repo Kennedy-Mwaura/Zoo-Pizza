@@ -314,12 +314,14 @@ $( () => {
                     + newOrder.n + "<br>" + "Total Price :  "
                     + newOrder.total + "<br><br>").css('font-family', 'Cinzel').css('font-size', '21px');
                 
-                //Pick Up logic
+                //Self Pick Up logic
                 $(".delivernot").click(() => {
+                    $(".dmessage").append("Thank you for your order <br> Your total is : " + newOrder.total);
+                    $("#pickupModal").modal("show");    
 
                 });
 
-                //Delivery logic
+                //Home Delivery logic
                 $(".deliver").click(() => {
                     $('.summary').slideUp();
                     $('#list').slideUp();
@@ -349,6 +351,14 @@ $( () => {
                         $(".delivery").show();
                         $("button#final-order").show();
                     }
+
+                });
+                $("#pickupModal").on("hidden.bs.modal", () => {
+                    location.reload();
+
+                });
+                $("#deliveryModal").on("hidden.bs.modal", () => {
+                    location.reload();
 
                 });
 
