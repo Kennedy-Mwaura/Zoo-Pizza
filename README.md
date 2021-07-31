@@ -33,7 +33,7 @@ This is a  web application to fulfill the following:
   
 ## Link to live site
 
-[Check the live version here]()
+[Check the live version here](https://kennedy-mwaura.github.io/Zoo-Pizza/)
 
 ## Technologies Used
 
