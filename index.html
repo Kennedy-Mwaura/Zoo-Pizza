@@ -13,6 +13,8 @@
     <link href="assets/css/mdb.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon/favicon-16x16.png" type="image/x-icon">
 
 
 </head>
@@ -316,14 +318,13 @@
                     </select>
                     <label for="number">Number of Pizza's</label>
                     <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
-    
-    
+                    <a href="#summary">
+                        <button type="submit" class="btn btn-rounded btn-success checkout" id="checkout">
+                            Checkout
+                        </button>
+                    </a>
                 </form>
-                <a href="#summary">
-                    <button type="submit" class="btn btn-rounded btn-success checkout" id="checkout">
-                        Checkout
-                    </button>
-                </a>
+                
     
             </div>
             <div class="col-sm-2"></div>
@@ -339,8 +340,9 @@
                 <div class="col-sm-3"></div>
                 <form action="" class="form-group col-sm-6 data">
                     <input type="text" class="form-control cdata" placeholder="Enter your Name:" id="name" required>
-                    <input type="number" class="form-control cdata" placeholder="Enter your phone number: " id="phone" required>
+                    <input type="number" class="form-control cdata" placeholder="Enter your phone number: " id="phone" min-length="10" max-length="10" required>
                     <input type="text" class="form-control cdata" placeholder="Enter your approximate location:" id="location" required >
+                    <p class=" cyan-text"> Kindly note a delivery fee of Ksh. 150/- will be added to your total </p>
                     <button class="btn btn-rounded btn-info text-center d-block mx-auto go" id="delivery-button" type="submit"> Get Pizza Delivered!</button>
                 </form>
                 <div class="col-sm-3"></div>
