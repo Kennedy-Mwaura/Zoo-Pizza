@@ -334,27 +334,50 @@
         <h2 class="text-center summary">Hello there, your order is as follows:</h2>
         <ol id="list" class="text-center sum">
         </ol>
-    
-    
         <div class="delivery-data-overlay">
             <div class="client-data row">
                 <div class="col-sm-3"></div>
                 <form action="" class="form-group col-sm-6 data">
-                    <input type="text" class="form-control cdata" placeholder="Enter your Name:">
-                    <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
-                    <input type="text" class="form-control cdata" placeholder="Enter the location: ">
-                    <button class="btn btn-rounded btn-info text-center d-block mx-auto go">Get Pizza Delivered</button>
+                    <input type="text" class="form-control cdata" placeholder="Enter your Name:" id="name" required>
+                    <input type="number" class="form-control cdata" placeholder="Enter your phone number: " id="number" required>
+                    <input type="text" class="form-control cdata" placeholder="Enter your approximate location:" id="location" required >
+                    <button class="btn btn-rounded btn-info text-center d-block mx-auto go" type="submit"> Get Pizza Delivered!</button>
                 </form>
-    
                 <div class="col-sm-3"></div>
             </div>
         </div>
         <div class="d-block mx-auto text-center">
-            <button class='deliver btn btn-rounded warm-flame-gradient indigo-text'>Make Delivery</button>
-            <button class='delivernot btn btn-rounded sunny-morning-gradient purple-text'>Self Pick Up</button>
+            <button class='deliver btn btn-rounded warm-flame-gradient indigo-text'> <i class="fas fa-truck"></i> Make Delivery</button>
+            <button class='delivernot btn btn-rounded sunny-morning-gradient purple-text'> <i class="fas fa-shopping-bag"></i> Self Pick Up</button>
         </div>
+         <!--Modal: delivery Modal Confirm-->
+         <div class="modal fade" id="deliveryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-notify modal-success" role="document">
+                <!--Content-->
+                <div class="modal-content text-center">
+                <!--Header-->
+                    <div class="modal-header d-flex justify-content-center">
+                        <p class="heading">You're pizza will be delivered  </p>
+                    </div>
+
+                    <!--Body-->
+                    <div class="modal-body">
+
+                        <i class="fa fa-user fa-4x animated rotateIn"></i>
+                        <br/>
+                        <div>
+                            <p class="green white-text" id="userName"></p>     
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!--Modal: delivery Modal Confirm--> 
     </div>
-    <!-- Section: Contact v.2 -->
+    <!-- Section: Contact-->
     <div class="container">
         <section id="contact" class="text-center my-5">
   
