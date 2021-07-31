@@ -343,8 +343,6 @@ $( () => {
     
                         $("#delivery-message").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+ newOrder.total);
                         $("#deliveryModal").modal('show');
-                        // $("#totalbill").hide();
-                        // $("#finallmessage").slideDown(1200);
                         console.log(phone, person, location)
                     }else {
                         alert("Please fill in the details for delivery!");
